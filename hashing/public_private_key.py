@@ -8,8 +8,9 @@ age = input("Enter your age: ")     # Get the age
 user_timestamp = time.time()        # Get the timestamp
 
 # Attach all to a string
-final = name + age + str(user_timestamp)
-
+final = name + " " + age + " " + str(user_timestamp)
+print(final)
+print("Hashing...")
 # Creating the public key
 temp = hashlib.sha256(final.encode())
 public_key = temp.hexdigest()
